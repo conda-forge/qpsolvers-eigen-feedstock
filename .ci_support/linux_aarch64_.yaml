@@ -19,9 +19,7 @@ cxx_compiler_version:
 docker_image:
 - quay.io/condaforge/linux-anvil-x86_64:alma9
 libosqp:
-- 0.6.3
-proxsuite:
-- 0.7.1
+- 1.0.0
 target_platform:
 - linux-aarch64
 zip_keys:

@@ -9,8 +9,6 @@ channel_targets:
 cxx_compiler:
 - vs2019
 libosqp:
-- 0.6.3
-proxsuite:
-- 0.7.1
+- 1.0.0
 target_platform:
 - win-64

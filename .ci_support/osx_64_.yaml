@@ -19,11 +19,9 @@ cxx_compiler:
 cxx_compiler_version:
 - '18'
 libosqp:
-- 0.6.3
+- 1.0.0
 macos_machine:
 - x86_64-apple-darwin13.4.0
-proxsuite:
-- 0.7.1
 target_platform:
 - osx-64
 zip_keys:
