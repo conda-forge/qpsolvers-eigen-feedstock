@@ -10,7 +10,7 @@ source:
     sha256: 185dc27b4520f9b3597e1199e7f4879da2590f04218cb90b81c78164151039a7
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: libqpsolvers-eigen
