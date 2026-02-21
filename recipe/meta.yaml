@@ -10,7 +10,7 @@ source:
     sha256: 185dc27b4520f9b3597e1199e7f4879da2590f04218cb90b81c78164151039a7
 
 build:
-  number: 1
+  number: 2
 
 outputs:
   - name: libqpsolvers-eigen
@@ -32,6 +32,7 @@ outputs:
       host:
         - libsharedlibpp
         - eigen
+        - eigen-abi-devel
 
     test:
       commands:
@@ -62,7 +63,8 @@ outputs:
         - libqpsolvers-eigen
         - libosqp
         - osqp-eigen
-          # Workaround as run_exports for some reason do not work correctly for multiple-output recipes
+        - eigen-abi-devel
+        # Workaround as run_exports for some reason do not work correctly for multiple-output recipes
         - {{ pin_subpackage('libqpsolvers-eigen', max_pin='x.x') }}
       run:
         - {{ pin_subpackage('libqpsolvers-eigen', max_pin='x.x') }}
@@ -89,6 +91,7 @@ outputs:
       host:
         - libqpsolvers-eigen
         - proxsuite
+        - eigen-abi-devel
         # Workaround as run_exports for some reason do not work correctly for multiple-output recipes
         - {{ pin_subpackage('libqpsolvers-eigen', max_pin='x.x') }}
       run:

@@ -22,6 +22,8 @@ libosqp:
 - 1.0.0
 macos_machine:
 - arm64-apple-darwin20.0.0
+osqp_eigen:
+- '0.11'
 target_platform:
 - osx-arm64
 zip_keys:
